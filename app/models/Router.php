@@ -31,7 +31,7 @@ class Router {
 		$this->post('/login', 'User@login')->name('loginUser');
 		$this->get('/user', 'User@index')->name('indexUser');
 		$this->put('/user', 'User@put')->name('putUser');
-		$this->put('/user', 'User@create')->name('createUser');
+		$this->post('/user', 'User@create')->name('createUser');
 		$this->delete('/user', 'User@delete')->name('deleteUser');
 		$this->get('/register', 'User@register')->name('registerUser');
 		$this->post('/register', 'User@registerPost')->name('registerPostUser');
