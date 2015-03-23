@@ -7,3 +7,5 @@
 
 # Managed by Composer
 /vendor
+
+composer.phar
