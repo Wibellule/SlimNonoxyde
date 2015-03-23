@@ -1,11 +1,9 @@
 # Cache and logs
-/var/cache/*
-/var/logs/*
-!var/cache/.gitkeep
-!var/logs/.gitkeep
+# .gitignore in /var/cache/
+# .gitignore in /var/logs/
 
 # Parameters
-/app/config/parameters.ini
+/etc/parameters.ini
 
 # Managed by Composer
-/vendor/*
+/vendor
