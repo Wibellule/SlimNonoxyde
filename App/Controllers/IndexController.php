@@ -6,15 +6,15 @@ class IndexController extends Controller
 	protected $app;
 
 	public function index() {
-		$this->app->render('Front/Pages/index.html');
+		$this->app->render('front/pages/index.html');
 	}
 
 	public function contacts() {
-		$this->app->render('Front/Pages/contacts.html');
+		$this->app->render('front/pages/contacts.html');
 	}
 
 	public function contact() {
-		$this->app->render('Front/Pages/contact.html');
+		$this->app->render('front/pages/contact.html');
 	}
 
 	public function contactPost() {
@@ -22,11 +22,11 @@ class IndexController extends Controller
 	}
 
 	public function faq() {
-		$this->app->render('Front/Pages/faq.html');
+		$this->app->render('front/pages/faq.html');
 	}
 
 	public function terms() {
-		$this->app->render('Front/Pages/terms.html');
+		$this->app->render('front/pages/terms.html');
 	}
 
 

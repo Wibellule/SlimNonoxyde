@@ -5,11 +5,11 @@ session_start();
 define('ROOT_PATH'          , __DIR__.'/../');
 define('VENDOR_PATH'        , ROOT_PATH.'vendor/');
 define('PUBLIC_PATH'        , ROOT_PATH.'public/');
-define('APP_PATH'           , ROOT_PATH.'App/');
+define('APP_PATH'           , ROOT_PATH.'app/');
 define('VAR_PATH'           , ROOT_PATH.'var/');
 
-define('VIEW_PATH'          , APP_PATH.'Views/');
-define('CONFIG_PATH'        , APP_PATH.'Config/');
+define('VIEW_PATH'          , APP_PATH.'views/');
+define('CONFIG_PATH'        , APP_PATH.'config/');
 
 define('LOG_PATH'           , VAR_PATH.'logs/');
 

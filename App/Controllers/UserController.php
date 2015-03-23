@@ -88,7 +88,7 @@ class UserController extends Controller
 	}
 
 	public function register() {
-		$this->app->render('Front/User/Register.html', array(
+		$this->app->render('front/user/register.html', array(
 			'actionUrl' => $this->app->urlFor('registerPostUser')
 		));
 	}

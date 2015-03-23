@@ -8,7 +8,7 @@ class AdminController extends Controller
 	protected $app;
 
 	public function index() {
-		$this->app->render('Pages/index.html');
+		$this->app->render('pages/index.html');
 	}
 
 	public function users() {
@@ -21,17 +21,17 @@ class AdminController extends Controller
 
 		$oLaboratory = new User ();
 
-		$this->app->render('Admin/User/users.html', array(
+		$this->app->render('admin/user/users.html', array(
 			'users' 	=> $oLaboratory->getUsers($page)
 		));
 	}
 
 	public function contacts() {
-		$this->app->render('Pages/contact.html');
+		$this->app->render('pages/contact.html');
 	}
 
 	public function contact() {
-		$this->app->render('Pages/contact.html');
+		$this->app->render('pages/contact.html');
 	}
 
 	public function contactPost() {
