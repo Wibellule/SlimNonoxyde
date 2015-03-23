@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Slim\\Views\\' => array($vendorDir . '/slim/views'),
+    'Slim\\Logger\\' => array($vendorDir . '/slim/logger'),
     'App\\' => array($baseDir . '/App'),
 );
