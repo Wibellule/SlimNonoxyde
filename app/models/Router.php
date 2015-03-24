@@ -13,41 +13,6 @@ class Router {
 	public function __construct($app)
 	{
 		$this->app = $app;
-
-		//APP FRONT ROUTES
-		$this->get('/', 'Index@index')->name('indexIndex');
-		$this->get('/contacts', 'Index@contacts')->name('contactsIndex');
-		$this->get('/contact', 'Index@contact')->name('contactIndex');
-		$this->post('/contact', 'Index@contactPost')->name('contactPostIndex');
-		$this->get('/faq', 'Index@faq')->name('faqIndex');
-		$this->get('/terms', 'Index@terms')->name('termsIndex');
-
-		//APP ADMIN ROUTES
-		$this->get('/admin/index', 'Admin@index')->name('indexAdmin');
-		$this->get('/admin/users', 'Admin@users')->name('usersAdmin');
-		$this->get('/admin/stuffs', 'Admin@stuffs')->name('stuffsAdmin');
-
-		//USER ROUTES
-		$this->post('/login', 'User@login')->name('loginUser');
-		$this->get('/user', 'User@index')->name('indexUser');
-		$this->put('/user', 'User@put')->name('putUser');
-		$this->post('/user', 'User@create')->name('createUser');
-		$this->delete('/user', 'User@delete')->name('deleteUser');
-		$this->get('/register', 'User@register')->name('registerUser');
-		$this->post('/register', 'User@registerPost')->name('registerPostUser');
-		$this->get('/catalog', 'User@catalog')->name('catalogUser');
-
-		//NOTIFICATION ROUTES
-		$this->get('/notification', 'Notification@index')->name('indexNotification');
-
-		//MESSAGES ROUTES
-		$this->get('/message', 'Message@index')->name('indexMessage');
-
-		//STUFF ROUTES
-		$this->get('/stuff', 'Stuff@index')->name('indexStuff');
-		$this->post('/stuff', 'Stuff@create')->name('createStuff');
-		$this->put('/stuff', 'Stuff@put')->name('putStuff');
-		$this->delete('/stuff', 'Stuff@delete')->name('deleteStuff');
 	}
 
 	/*

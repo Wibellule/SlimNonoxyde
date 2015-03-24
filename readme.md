@@ -8,23 +8,24 @@ Getting Started
 ---------------
 1. Get or download the project
 2. Install it using Composer
+3. Make sure var/cache and var/logs are writable
 
 Folder System
 ---------------
-* lib/
+* app/lib/
     * Config.php (Class to store with config variables)
-    * Core.php (Singleton PDO connection to the DB)   
-* models/
+    * Core.php (Singleton PDO connection to the DB)
+* app/models/
 * public/
 * routers/
 	* name.router.php (routes by functionalities)
-* templates/
+* app/views/
 
-### lib/
+### app/lib/
 
 Here we have the core classes of the connection with the DB
 
-### models/
+### app/models/
 
 Add the model classes here.
 We are using PDO for the Database.
@@ -96,7 +97,7 @@ $app->delete('/stuff', function () {
 });
 ```
 
-### templates/
+### app/views/
 
 All the Twig templates.
 
